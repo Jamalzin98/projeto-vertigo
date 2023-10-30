@@ -14,6 +14,7 @@
     --gray-200:#e2e8f0;
     --purple:#7c3aed;
     --white: #fff;
+    --light-purple: #9F67FF;
    }
    /* numero = 20 */
    /* print(numero */
@@ -86,7 +87,7 @@ main{
 
 .login a{
     color: var(--purple);
-    text-decoration: underline;
+    text-decoration: none;
     font-size: 0.875rem;
     font-weight: 600;
 }
@@ -109,6 +110,10 @@ main{
 
 }
 
+.login button:hover{
+    background: var(--light-purple);
+    transition: 0.3s;
+}
 .login > p{
     color: var(--gray-600)
 }
@@ -131,6 +136,7 @@ main{
         margin: 2.5rem 7rem 7rem;
 
         height: fit-content;
+        
     }
 }
 header  img {
@@ -139,12 +145,26 @@ header  img {
 main {
     margin-inline: 7rem;
     max-width: 24rem;
+    padding: 0;
 }
 .conteudo{
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 .bg-desktop {
     display: block;
     width: 100%;
 }
+
+.descricao h1{
+    font-size: 2.25rem;
+
+}
+
+.descricao p {
+    font-size: 1rem;
+}
+
 /* nome da cor,rgb,rgba,bex,hsl,hwb */
